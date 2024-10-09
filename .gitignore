@@ -1,0 +1,4 @@
+.idea
+__pycache
+.DS_Store
+__pycache__/tkinter_ui.cpython-312.pyc
