@@ -28,7 +28,9 @@ class App(tk.CTk):
         # 2. Frame with "Add Watermark" on the bottom
         self.watermark_frame = AddWatermarkFrame(self)
         self.watermark_frame.grid(row=1, column=0, sticky="ew", padx=10, pady=10)
-        self.watermark_frame.button_add_watermark.configure(command=lambda: self.watermark_frame.apply_watermark(img_path=self.upload_img_frame.preview_img, watermark_text=self.watermark_frame.watermark_entry.get()))
+        self.watermark_frame.button_add_watermark.configure(
+            command=lambda: self.watermark_frame.apply_watermark(img_path=self.upload_img_frame.preview_img,
+                                                                 watermark_text=self.watermark_frame.watermark_entry.get()))
 
 
 class AddWatermarkFrame(tk.CTkFrame):

@@ -7,14 +7,8 @@ Steps to make the watermark app:
 4. Add buttons to have actions for the file: download or another photo
 
 """
-from  tkinter_ui import App
-
-
-
+from tkinter_ui import App
 
 app = App()
-app.lift()
-
-
+app.focus_force()
 app.mainloop()
-
